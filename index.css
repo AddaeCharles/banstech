@@ -10,9 +10,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: var(font-family);
 }
 body{
-  font-family: var(font-family);
   background-color:var(--primary-color)
 }
 h2{
@@ -83,6 +83,7 @@ header .header_container .header_right .navbar_container .nav_list .nav_item:hov
   justify-content: center;
   width:100%;
   height: 100%;
+  padding: 20px 0;
 }
 .hero_section .hero_container{
   display:flex;
@@ -96,4 +97,83 @@ flex: 1;
 }
 .hero_section .hero_container .col .hero_title_text{
 color: white;
-  }
+font-size: clamp (1.3em,3vw,3em );
+padding: 20px 3px;
+}
+.hero_section .hero_container .col .hero_desc_text{
+  color: white;
+  font-size: 14px;
+  padding: 15px 3px;
+}
+  .hero_section .hero_container .col .knowmore-btn{
+    background-color: var(--marker-color);
+    color: white;
+    padding: 10px 50px;
+    outline: none;
+    border: 1px solid var(--marker-color);
+    border-radius: 5px;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+.hero_section .hero_container .col .knowmore-btn:hover{
+ background: transparent;
+}
+
+  .hero_section .hero_container .col .hero_img_container{
+   width: 80%;
+   height: 40%;
+}
+.hero_section .hero_container .col .hero_img_container .hero_img{
+  width: 70%;
+  height: 30%;
+  object-fit: cover;
+  border-radius: 80px;
+  min-height: 650px;
+}
+ .categories_section{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.categories_section .categories_container{
+  width: 90%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.categories_section .categories_container .section_header_container{
+width: 100%;
+padding: 20px;
+}
+.categories_section .categories_container .section_header_container .sub_head{
+  color: var(--marker-color);
+}
+.categories_section .categories_container .section_header_container .main_head{
+  color: white;
+  font-size: clamp(1.2em,3vw,3em);
+}
+.categories_section .categories_container .categories_content_container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.categories_section .categories_container .categories_content_container .categories_card .img_container{
+  width: 100px;
+  height: 100px;
+}
+.categories_section .categories_container .categories_content_container .categories_card .img_container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  gap: 10px;
+}
+.categories_section .categories_container .categories_content_container .categories_card{
+  background-color: var(--primary-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
